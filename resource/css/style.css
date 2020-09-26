@@ -100,9 +100,16 @@ nav{
 
 header{
     background-color: #1A1A1D;
-    padding-top: calc(112px + 17rem);
-    padding-bottom: 112px;
+    padding-top: 20rem;
+    padding-bottom: 150px;
     text-align: center;
+}
+
+#name {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    letter-spacing: 5px;
+    word-spacing: 5px;
 }
 
 header h1 {
@@ -114,6 +121,8 @@ header h1 {
 header h2 {
     color: #fff;
     font-weight: 300;
+    letter-spacing: 3px;
+    word-spacing: 3px;
 }
 
 #profilImage{
@@ -220,7 +229,6 @@ header .star-dark::after {
 
 #about {
     padding: 10rem 0rem;
-
     text-align: center;
     background-color: #1A1A1D;
 }
@@ -288,3 +296,71 @@ header .star-dark::after {
 }
 
 
+/*CONTACT*/
+
+#contact {
+    padding: 10rem 0rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 5rem;
+    color: #950740;
+}
+
+#contact-form {
+    margin: 5rem 50rem;
+}
+
+.form-item {
+    text-align: left;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+#contact-form input, textarea {
+    display: block;
+    font-size: 2.4rem;
+    padding: 1rem 0rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);  
+    color: gray; 
+}
+
+
+
+#send-btn {
+    padding-top: 5rem;
+    text-align: left;
+    margin-right: 600px;
+}
+
+#send-btn:hover i{
+    color: #fff;
+}
+
+
+#send-btn a {
+    color: #950740;
+    font-size: 1.5rem;
+    border: .2rem solid black;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+    transition: all 0.3s ease-out;
+}
+
+#send-btn a:hover {
+    color: #fff;
+    border: .2rem solid black;
+    background-color: #950740;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+}
+
+#send-btn i {
+    padding-right: 2rem;
+    color: #950740;
+    transition: color 0.3s ease-out;
+
+}
