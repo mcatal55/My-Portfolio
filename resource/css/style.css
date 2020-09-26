@@ -364,3 +364,67 @@ header .star-dark::after {
     transition: color 0.3s ease-out;
 
 }
+
+/*FOOTER*/
+
+footer {
+    padding: 8rem 0rem;
+    text-align: center;
+    background-color: #6F2232;
+    
+}
+
+#footer-section {
+    padding-bottom: 10rem;
+}
+
+.footer-item {
+    float: left;
+    width: 33.33333%;
+    padding: 10px;
+}
+
+.footer-item h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-item p {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+#social-media a {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 1rem;
+}
+
+#social-media i {
+    transition: all 0.5s;
+}
+
+#social-media i:hover {
+    color: #C3073F;
+    border: 1px solid #fff;
+    font-size: 5rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.footer-item b {
+    letter-spacing: 0.2rem;
+    transition: all 0.5s;
+}
+
+.footer-item b:hover {
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    color: #C3073F;
+    font-size: 2rem ;
+}
+
