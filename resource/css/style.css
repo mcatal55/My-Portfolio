@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -55,8 +63,8 @@ nav{
     z-index: 500;
 }
 
-.container {
-    width: 1140px;  
+.container {   
+    width: 100%;    /*width: 1140px; Wegen Responsive Design wurde "Container Width" von 110px zu 100% geändert.  */
     margin: 0rem auto;
     padding: 0rem 0.5rem;
 }
@@ -428,3 +436,26 @@ footer {
     font-size: 2rem ;
 }
 
+@media screen and (min-width: 576px) {
+    .container {   
+        width: 546px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {   
+        width: 738px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {   
+        width: 962px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {   
+        width: 1140px;
+    }
+}
