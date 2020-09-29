@@ -13,7 +13,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 6px;
 }
 
 body {
@@ -53,6 +53,17 @@ ul {
     margin: auto;
 }
 
+.col {
+    float: left;
+    width: 100%;
+    padding: 1rem;
+}
+
+.col-footer {
+    float: left;
+    width: 100%;
+    padding: 2rem;
+}
 /*navbar*/
 nav{
     background-color: #6F2232;
@@ -134,6 +145,7 @@ header h2 {
 }
 
 #profilImage{
+    width: 30rem;
     border-radius: 50%;
     border: 5px solid #6F2232;
     opacity: 0.9;
@@ -191,12 +203,6 @@ header .star-dark::after {
 
 #portfolio .star::after {
     background-color: #fff;
-}
-
-.col {
-    float: left;
-    width: 33.33333%;
-    padding: 10px;
 }
 
 .portfolio-item {
@@ -269,22 +275,23 @@ header .star-dark::after {
 
 #about-text {
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 300;
-    line-height: 40px;
-    padding: 10px 350px;
+    line-height: 5rem;
+    padding: 1rem 4rem;
     text-align: justify;
-    column-count: 2;
+    column-count: 1;
     column-gap: 12rem;
 }
 
 #about-btn {
-    padding-top: 12rem;
+    padding-top: 10rem;
 }
 
 
 #about-btn a {
     color: #fff;
+    font-size: 2rem;
     border: .2rem solid #fff;
     padding: 2rem 3rem;
     border-radius: .5rem;
@@ -318,7 +325,7 @@ header .star-dark::after {
 }
 
 #contact-form {
-    margin: 5rem 50rem;
+    margin: 5rem 5rem;
 }
 
 .form-item {
@@ -340,8 +347,7 @@ header .star-dark::after {
 
 #send-btn {
     padding-top: 5rem;
-    text-align: left;
-    margin-right: 600px;
+    text-align: center;
 }
 
 #send-btn:hover i{
@@ -351,7 +357,7 @@ header .star-dark::after {
 
 #send-btn a {
     color: #950740;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     border: .2rem solid black;
     padding: 2rem 3rem;
     border-radius: .5rem;
@@ -375,21 +381,19 @@ header .star-dark::after {
 
 /*FOOTER*/
 
-footer {
-    padding: 8rem 0rem;
+#footer {
+    padding: 5rem 0rem;
     text-align: center;
     background-color: #6F2232;
-    
+}
+
+#footer-items {
+    margin: 1rem;
 }
 
 #footer-section {
-    padding-bottom: 10rem;
-}
-
-.footer-item {
-    float: left;
-    width: 33.33333%;
-    padding: 10px;
+    padding-bottom: 1rem;
+    
 }
 
 .footer-item h1 {
@@ -400,6 +404,7 @@ footer {
 
 .footer-item p {
     font-family: 'Merriweather', serif;
+    font-size: 2rem;
     font-weight: 300;
     color: #fff;
     margin-top: 1rem;
@@ -440,11 +445,27 @@ footer {
     .container {   
         width: 546px;
     }
+
+    html {
+        font-size: 7px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {   
         width: 738px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+    .col {
+        width: 50%;
+    }
+
+    .col-footer {
+        width: 33.33333%;
     }
 }
 
@@ -452,10 +473,32 @@ footer {
     .container {   
         width: 962px;
     }
+
+    html {
+        font-size: 9px;
+    }
+
+    .col {
+        width: 33.33333%;
+    }
+
+    #about-text {
+        column-count: 2;
+        column-gap: 5rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .container {   
         width: 1140px;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    #about-text {
+        padding: 1rem 10rem;
+        column-gap: 10rem;
     }
 }
