@@ -1,580 +1,596 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
-    font-size: 6px;
+  font-size: 6px;
 }
 
-body {
-    font-family: 'Merriweather', serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: #fff;
+html body {
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  /*navbar*/
+  /*HEADER*/
+  /*PORTFOLIO*/
+  /*ABOUT*/
+  /*CONTACT*/
+  /*FOOTER*/
+  /*/*/
+  /*/*/
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
+html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
 }
 
-a {
-    text-decoration: none;
+html body a {
+  text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
+html body ul {
+  list-style-type: none;
 }
 
-.text-uppercase {
-    text-transform: uppercase;
+html body .text-uppercase {
+  text-transform: uppercase;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
+html body .clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
+html body .img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
 
-.col {
-    float: left;
-    width: 100%;
-    padding: 1rem;
+html body .col {
+  float: left;
+  width: 100%;
+  padding: 1rem;
 }
 
-.col-footer {
-    float: left;
-    width: 100%;
-    padding: 2rem;
-}
-/*navbar*/
-nav{
-    background-color: #6F2232;
-    color: #fff;
-    padding: 2.4rem 0rem;
-    position: fixed;
-    width: 100%;
-    z-index: 500;
+html body .col-footer {
+  float: left;
+  width: 100%;
+  padding: 2rem;
 }
 
-.container {   
-    width: 100%;    /*width: 1140px; Wegen Responsive Design wurde "Container Width" von 110px zu 100% geändert.  */
-    margin: 0rem auto;
-    padding: 0rem 0.5rem;
+html body .container {
+  width: 100%;
+  /*width: 1140px; Wegen Responsive Design wurde "Container Width" von 110px zu 100% geändert.  */
+  margin: 0rem auto;
+  padding: 0rem 0.5rem;
 }
 
-#logo-box {
-    float: left;
-    padding-top: .5rem;
+html body .star-dark {
+  border: none;
+  border-top: .4rem solid #950740;
+  max-width: 25rem;
+  margin: 5rem auto;
+  overflow: visible;
+  /*mit diese Code wurde Sterne vollständig gezeigt*/
 }
 
-#logo-box .logo {
-    color: #fff;
-    font-size: 3.2rem;
-    font-weight: 700;
-    
+html body .star-dark::after {
+  content: "\f005";
+  color: #C3073F;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3.2rem;
+  position: relative;
+  top: -2.5rem;
+  padding: 0.4rem;
+  background-color: #1A1A1D;
 }
 
-#nav-links {
-    float: right;
+html body nav {
+  background-color: #6F2232;
+  color: #fff;
+  padding: 2.4rem 0rem;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
 }
 
-#nav-links .nav-item {
-    float: left;
-    margin: .4rem;
+html body nav #logo-box {
+  float: left;
+  padding-top: .5rem;
+  margin-left: 22rem;
 }
 
-#nav-links .nav-link {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 700;
-    display: block;
-    padding: 1.6rem;
-    transition: color .2s;
+html body nav #logo-box .logo {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 
-#nav-links .nav-link:hover {
-    color: #1A1A1D;
-    
+html body nav #nav-links .nav-item {
+  margin: .4rem;
 }
 
-#nav-links .nav-icon {
+html body nav #nav-links .nav-item .nav-link {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: block;
+  padding: 1.6rem;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+html body nav #nav-links .nav-item .nav-link:hover {
+  color: #1A1A1D;
+}
+
+html body header {
+  background-color: #1A1A1D;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+html body header #name {
+  padding-bottom: 6rem;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+
+html body header h1 {
+  color: #950740;
+  font-size: 5rem;
+  padding-top: 3rem;
+}
+
+html body header h2 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  padding-top: 2rem;
+}
+
+html body header #profilImage {
+  margin: 6rem 0rem;
+  width: 30rem;
+  border-radius: 50%;
+  border: 5px solid #6F2232;
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 0px 20px 0px  #6F2232;
+          box-shadow: 0px 0px 20px 0px  #6F2232;
+  -webkit-transition: -webkit-filter, -webkit-box-shadow, -webkit-transform 0.5s;
+  transition: -webkit-filter, -webkit-box-shadow, -webkit-transform 0.5s;
+  transition: filter, box-shadow, transform 0.5s;
+  transition: filter, box-shadow, transform 0.5s, -webkit-filter, -webkit-box-shadow, -webkit-transform 0.5s;
+}
+
+html body header #profilImage:hover {
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-box-shadow: 0px 0px 20px 0px  #d8d1b0;
+          box-shadow: 0px 0px 20px 0px  #d8d1b0;
+}
+
+html body #portfolio {
+  padding: 10rem 0rem;
+  text-align: center;
+}
+
+html body #portfolio h2 {
+  font-size: 5rem;
+  color: #950740;
+}
+
+html body #portfolio .star-dark::after {
+  background-color: #fff;
+}
+
+html body .portfolio-item {
+  position: relative;
+}
+
+html body .portfolio-item:hover .image-overlay {
+  opacity: 0.8;
+}
+
+html body .portfolio-item img {
+  display: block;
+}
+
+html body .portfolio-item .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #C3073F;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+html body .portfolio-item .image-overlay .icon {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+html body #about {
+  padding: 10rem 0rem;
+  text-align: center;
+  background-color: #1A1A1D;
+}
+
+html body #about h2 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+html body #about .star-light {
+  border: none;
+  border-top: 0.4rem solid #fff;
+  max-width: 25rem;
+  margin: 2.5rem auto;
+  overflow: visible;
+  /*mit diese Code wurde Sterne vollständig gezeigt*/
+}
+
+html body #about .star-light::after {
+  content: "\f005";
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 3.2rem;
+  position: relative;
+  top: -2.5rem;
+  padding: 0.4rem;
+  background-color: #1A1A1D;
+}
+
+html body #about #about-text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 5rem;
+  padding: 1rem 4rem;
+  text-align: justify;
+  -webkit-column-count: 1;
+          column-count: 1;
+  -webkit-column-gap: 12rem;
+          column-gap: 12rem;
+}
+
+html body #about #about-btn {
+  padding-top: 10rem;
+}
+
+html body #about #about-btn a {
+  color: #fff;
+  font-size: 2rem;
+  border: 0.2rem solid #fff;
+  padding: 2rem 3rem;
+  border-radius: .5rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+html body #about #about-btn a:hover {
+  color: #fff;
+  background-color: #C3073F;
+  border: 0.2rem solid #fff;
+  padding: 2rem 3rem;
+  border-radius: .5rem;
+}
+
+html body #about #about-btn i {
+  padding-right: 2rem;
+}
+
+html body #contact {
+  padding: 10rem 0rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+html body #contact h2 {
+  font-size: 5rem;
+  color: #950740;
+}
+
+html body #contact .star-dark::after {
+  background-color: #fff;
+}
+
+html body #contact #contact-form {
+  margin: 5rem 5rem;
+}
+
+html body #contact #contact-form .form-item {
+  text-align: left;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+html body #contact #contact-form .form-item input, html body #contact #contact-form .form-item textarea {
+  display: block;
+  font-size: 2.4rem;
+  padding: 1rem 0rem;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: gray;
+}
+
+html body #contact #contact-form #send-btn {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+html body #contact #contact-form #send-btn:hover i {
+  color: #fff;
+}
+
+html body #contact #contact-form #send-btn a {
+  color: #950740;
+  font-size: 2.4rem;
+  border: .2rem solid black;
+  padding: 2rem 3rem;
+  border-radius: .5rem;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+html body #contact #contact-form #send-btn a:hover {
+  color: #fff;
+  border: .2rem solid black;
+  background-color: #950740;
+  padding: 2rem 3rem;
+  border-radius: .5rem;
+}
+
+html body #contact #contact-form #send-btn i {
+  padding-right: 2rem;
+  color: #950740;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+html body #footer {
+  padding: 5rem 0rem;
+  text-align: center;
+  background-color: #6F2232;
+}
+
+html body #footer #footer-items {
+  margin: 1rem;
+}
+
+html body #footer #footer-items h1 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 3rem;
+}
+
+html body #footer #footer-items p {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+html body #footer #footer-items #social-media a {
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 700;
+  display: inline-block;
+  padding: 1rem;
+}
+
+html body #footer #footer-items #social-media i {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html body #footer #footer-items #social-media i:hover {
+  color: #C3073F;
+  border: 1px solid #fff;
+  font-size: 5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+html body #footer #footer-items b {
+  display: block;
+  margin-top: 2rem;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html body #footer #footer-items b:hover {
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  color: #C3073F;
+  font-size: 2rem;
+}
+
+html body #footer #footer-items hr {
+  border: 1px solid rgba(245, 244, 244, 0.164);
+  width: 80%;
+  margin: 3rem auto;
+}
+
+/* MEDIA QUERY*/
+@media (min-width: 576px) {
+  html {
+    font-size: 7px;
+  }
+  html .container {
+    width: 546px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+  html .container {
+    width: 738px;
+  }
+  html .col {
+    width: 50% !important;
+  }
+  html .col-footer {
+    width: 33.33333% !important;
+  }
+  html .col-footer #social-media a {
+    padding: 0.5rem !important;
+    font-size: 3.5rem !important;
+  }
+  html .col-footer hr {
     display: none;
+  }
 }
 
-/*HEADER*/
-
-header{
-    background-color: #1A1A1D;
-    padding-top: 20rem;
-    padding-bottom: 10rem;
-    text-align: center;
+@media (min-width: 992px) {
+  /*992px*/
+  html {
+    font-size: 9px;
+  }
+  html header {
+    padding-top: 15rem !important;
+  }
+  html .container {
+    width: 962px;
+  }
+  html .container #logo-box {
+    margin-left: 100px;
+  }
+  html .container .profil-text {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 0rem 30rem;
+  }
+  html .container .profil-text h2 {
+    width: 50%;
+    float: left;
+  }
+  html .col {
+    width: 33.33333% !important;
+  }
+  html #about-text {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+  }
+  html #nav-links {
+    margin-right: 5rem;
+  }
+  html #nav-links .nav-item {
+    float: right;
+  }
+  html #nav-links .toast-menu {
+    display: none;
+  }
 }
 
-#name {
-    padding-bottom: 6rem;
-    letter-spacing: 5px;
-    word-spacing: 5px;
-}
-
-header h1 {
-    color: #950740;
-    font-size: 5rem;
-    padding-top: 3rem;
-}
-
-header h2 {
-    color: #fff;
-    font-weight: 300;
-    letter-spacing: 3px;
-    word-spacing: 3px;
-}
-
-#profilImage{
-    margin: 8rem 0rem;
-    width: 30rem;
-    border-radius: 50%;
-    border: 5px solid #6F2232;
-    opacity: 0.9;
-    box-shadow: 0px 0px 20px 0px  #6F2232;
-    transition: filter, box-shadow, transform 0.5s;
-}
-
-#profilImage:hover {
-    filter: sepia(100%);
-    transform: scaleX(-1);
-    box-shadow: 0px 0px 20px 0px  #d8d1b0;
-
-   
-}
-
-
-.star-dark{
+@media (min-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+  html .container {
+    width: 1140px;
+  }
+  html .container #name {
+    padding-top: 5rem;
+  }
+  html .container #profilImage {
+    margin: 0rem;
+  }
+  html .container h1 {
+    padding-top: 0rem;
+  }
+  html #nav-links {
+    margin-right: 20rem;
+  }
+  html #about-text {
+    padding: 1rem 15rem !important;
+    -webkit-column-gap: 10rem;
+            column-gap: 10rem;
+  }
+  html #contact-form {
+    padding: 1rem 10rem !important;
+  }
+  html #footer hr {
+    display: none;
+  }
+  html .star-dark {
     border: none;
     border-top: .4rem solid #950740;
     max-width: 25rem;
-    margin: 5rem auto;
-    overflow: visible;  /*mit diese Code wurde Sterne vollständig gezeigt*/
-    
-}
-
-.star-dark::after {
-    content: "\f005";
-    color: #C3073F;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 3.2rem;
-    position: relative;
-    top: -2.5rem;
-    padding: 0.4rem;
-    background-color: #fff;
-}
-
-header .star-dark::after {
-    background-color: #1A1A1D; 
-}
-
-
-/*PORTFOLIO*/
-
-#portfolio {
-    
-    padding: 10rem 0rem;
-    text-align: center;
-}
-
-#portfolio h2 {
-    font-size: 5rem;
-    color: #950740;
-}
-
-#portfolio .star::after {
-    background-color: #fff;
-}
-
-.portfolio-item {
-    position: relative;
-}
-
-.portfolio-item img {
-    display: block;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #C3073F;
-    opacity: 0;
-    transition: opacity .3s ;
-}
-
-.image-overlay .icon {
-    color: #fff;
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-
-.portfolio-item:hover .image-overlay {
-    opacity: 0.8;
-}
-
-
-/*ABOUT*/
-
-#about {
-    padding: 10rem 0rem;
-    text-align: center;
-    background-color: #1A1A1D;
-}
-
-#about h2 {
-    font-size: 5rem;
-    color: #fff;
-}
-
-.star-light{
-    border: none;
-    border-top: .4rem solid #fff;
-    max-width: 25rem;
-    margin: 2.5rem auto;
-    overflow: visible;  /*mit diese Code wurde Sterne vollständig gezeigt*/
-    
-}
-
-.star-light::after {
-    content: "\f005";
-    color: #fff;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 3.2rem;
-    position: relative;
-    top: -2.5rem;
-    padding: 0.4rem;
-    background-color: #1A1A1D;
-}
-
-#about-text {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 5rem;
-    padding: 1rem 4rem;
-    text-align: justify;
-    column-count: 1;
-    column-gap: 12rem;
-}
-
-#about-btn {
-    padding-top: 10rem;
-}
-
-
-#about-btn a {
-    color: #fff;
-    font-size: 2rem;
-    border: .2rem solid #fff;
-    padding: 2rem 3rem;
-    border-radius: .5rem;
-    transition: all 0.3s ease-out;
-}
-
-#about-btn a:hover {
-    color: #fff;
-    background-color: #C3073F;
-    border: .2rem solid #fff;
-    padding: 2rem 3rem;
-    border-radius: .5rem;
-}
-
-#about-btn i {
-    padding-right: 2rem;
-}
-
-
-/*CONTACT*/
-
-#contact {
-    padding: 10rem 0rem;
-    text-align: center;
-    background-color: #fff;
-}
-
-#contact h2 {
-    font-size: 5rem;
-    color: #950740;
-}
-
-#contact-form {
-    margin: 5rem 5rem;
-}
-
-.form-item {
-    text-align: left;
-    font-size: 2.4rem;
-    margin-bottom: 3rem;
-}
-#contact-form input, textarea {
-    display: block;
-    font-size: 2.4rem;
-    padding: 1rem 0rem;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);  
-    color: gray; 
-}
-
-
-
-#send-btn {
-    padding-top: 5rem;
-    text-align: center;
-}
-
-#send-btn:hover i{
-    color: #fff;
-}
-
-
-#send-btn a {
-    color: #950740;
-    font-size: 2.4rem;
-    border: .2rem solid black;
-    padding: 2rem 3rem;
-    border-radius: .5rem;
-    transition: all 0.3s ease-out;
-}
-
-#send-btn a:hover {
-    color: #fff;
-    border: .2rem solid black;
-    background-color: #950740;
-    padding: 2rem 3rem;
-    border-radius: .5rem;
-}
-
-#send-btn i {
-    padding-right: 2rem;
-    color: #950740;
-    transition: color 0.3s ease-out;
-
-}
-
-/*FOOTER*/
-
-#footer {
-    padding: 5rem 0rem;
-    text-align: center;
-    background-color: #6F2232;
-}
-
-#footer-items {
-    margin: 1rem;
-}
-
-#footer-section {
-    padding-bottom: 1rem;
-    
-}
-
-.footer-item h1 {
-    font-family: 'Merriweather', serif;
-    font-weight: 700;
-    color: #fff;
-    font-size: 3rem;
-}
-
-.footer-item p {
-    font-family: 'Merriweather', serif;
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: #fff;
-    margin-top: 1rem;
-}
-
-#social-media a {
-    color: #fff;
-    font-size: 4rem;
-    font-weight: 700;
-    display: inline-block;
-    padding: 1rem;
-}
-
-#social-media i {
-    transition: all 0.5s;
-}
-
-#social-media i:hover {
-    color: #C3073F;
-    border: 1px solid #fff;
-    font-size: 5rem;
-    border-radius: 5px;
-    padding: 0.5rem;
-}
-.footer-item b {
-    display: block;
-    margin-top: 2rem;
-    letter-spacing: 0.2rem;
-    transition: all 0.5s;
-}
-
-.footer-item b:hover {
-    letter-spacing: 0.5rem;
-    cursor: pointer;
-    color: #C3073F;
-    font-size: 2rem ;
-}
-
-hr {
-    border: 1px solid rgba(245, 244, 244, 0.164);;
-    width: 80%;
-    margin: 3rem auto;
-}
-
-@media screen and (min-width: 576px) {
-    .container {   
-        width: 546px;
-    }
-
-    html {
-        font-size: 7px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {   
-        width: 738px;
-    }
-
-    html {
-        font-size: 8px;
-    }
-
-    .col {
-        width: 50%;
-    }
-
-    .col-footer {
-        width: 33.33333%;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .container {   
-        width: 962px;
-    }
-
-    html {
-        font-size: 9px;
-    }
-
-    .col {
-        width: 33.33333%;
-    }
-
-    #about-text {
-        column-count: 2;
-        column-gap: 5rem;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {   
-        width: 1140px;
-    }
-
-    html {
-        font-size: 10px;
-    }
-
-    #name {
-        padding-top: 5rem;
-    }
-
-    #about-text {
-        padding: 1rem 10rem;
-        column-gap: 10rem;
-    }
-
-    #footer hr {
-        display: none;
-    }
-
-    .star-dark{
-        border: none;
-        border-top: .4rem solid #950740;
-        max-width: 25rem;
-        /* margin: 5rem auto; */
-        overflow: visible;  /*mit diese Code wurde Sterne vollständig gezeigt*/
-        
-    }
-
-    #profilImage{
-        margin: 0rem;
-    }
-
-    header h1 {
-        padding-top: 0rem;
-    }
+    /* margin: 5rem auto; */
+    overflow: visible;
+    /*mit diese Code wurde Sterne vollständig gezeigt*/
+  }
 }
 
 /*TOAST MENU*/
-
-@media screen and (max-width: 992px) {
-    #logo-box {
-        float: none;
-        text-align: center;
-    }
-
-    #nav-links {
-        float: none;
-    }
-
-    #nav-links .nav-item {
-        float: none;
-        text-align: center;
-    }
-
-    #nav-links.toast-close .nav-item:not(:first-child) {  /*nur Toast Taste wurde ausgewählt und bleibt, die andere li tags wurde versteckt.*/
-        display: none;
-        
-    }
-
-    .nav-link { 
-        font-size: 5rem!important;
-        
-
-    }
-    #nav-links:not(.toast-close) .nav-item:not(:first-child){
-        padding:8rem 0rem 11rem 0rem;
-    }
-
-    /* body:not(.toast-close) nav:not(.container) {
-        background-color: rgba(48, 3, 10, 0.548);
-        
-    } */
-
-    #nav-links .nav-icon {
-        display: block;
-        position: absolute;
-        top: 0.8rem;
-        right: 1.5rem;
-        font-size: 4rem!important;
-        
-    }
+@media (max-width: 992px) {
+  /*992px*/
+  nav {
+    float: none;
+  }
+  #logo-box {
+    float: none;
+    text-align: center;
+  }
+  #nav-links {
+    float: none;
+    clear: both;
+  }
+  #nav-links .nav-item {
+    float: none;
+    clear: both;
+    text-align: center;
+  }
+  #nav-links .nav-item .nav-link {
+    font-size: 5rem !important;
+  }
+  #nav-links .nav-item .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+    font-size: 4rem !important;
+  }
+  #nav-links.toast-close .nav-item:not(:first-child) {
+    /*nur Toast Taste wurde ausgewählt und bleibt, die andere li tags wurde versteckt.*/
+    display: none;
+  }
+  #nav-links:not(.toast-close) .nav-item:not(:first-child) {
+    padding: 8rem 0rem 11rem 0rem;
+  }
 }
+/*# sourceMappingURL=style.css.map */
